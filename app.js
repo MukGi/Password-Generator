@@ -3,6 +3,10 @@ const includeUppercase = true;
 const includeLowercase = true;
 const includeNumbers = true;
 const includeSymbols = true;
+const btn = document.getElementById("genBtn");
+const copy = document.getElementById("copy")
+let showPass = document.getElementById("displayText");
+
 
 function generatePassword(length,includeUppercase,includeLowercase,includeNumbers,includeSymbols){
 
@@ -40,10 +44,21 @@ function generatePassword(length,includeUppercase,includeLowercase,includeNumber
 }
 
 
+btn.onclick = ()=>{
+    password = generatePassword(passwordLength,
+        includeUppercase,
+        includeLowercase,
+        includeNumbers,
+        includeSymbols)
+    showPass.textContent = password;
+    showPass.style.opacity = 100;
+}
 
-const password = generatePassword(passwordLength,
-                                includeUppercase,
-                                includeLowercase,
-                                includeNumbers,
-                                includeSymbols)
-console.log(`Generate password: ${password}`)
+// copy.onclick = ()=>{
+//     showPass.select();
+//     showPass.setSelectionRange(0, 99999);
+//     navigator.clipboard.writeText(showPass.value)
+//     console.log('clicked')
+// }
+
+

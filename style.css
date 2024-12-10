@@ -1,0 +1,75 @@
+
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Jersey+10&family=Josefin+Sans&family=Poppins&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body{
+    background-color: #FFB703;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+
+
+.pssBox{
+    position: relative;
+    display: flex;
+    border : solid 5px;
+    width: 750px;
+    height: 204px;
+    align-self:  center;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    font-family: "ADLaM Display", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #CAF0F8;
+    
+}
+
+.pssBox label{
+    opacity: 53%;
+    font-size: 54px;
+}
+
+.pssBox .clipboard{
+    position: absolute;
+    float: right;
+    border: none;
+    background: none;
+    top:5px;
+    right: 5px;
+   
+}
+
+.clipboard img{
+    width: 30px;
+    height: 36px;
+}
+.genr8_btn{
+    border: solid 5px rgb(0, 0, 0);
+    border-radius: 10px;
+    width: 321px;
+    height: 98px;
+    margin-top: 48px;
+    background-color: #8ECAE6;
+    font-family: "ADLaM Display", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    
+}
+
+.genr8_btn:hover{
+    transform: scale(1.01,1.01);
+    background-color: #52a0c4;
+}
+
